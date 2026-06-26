@@ -51,7 +51,7 @@ citation: Amaya, Avalon; Bawany, Ahad; Buice, Michael; Carlson, Mikayla; De Fili
   Jérôme A.; Loeffler, Henry; Marks, Lydia; Naidoo, Robyn; Ott, Torben; Ouellette,
   Ben; Peene, Ross Carter; Rembado, Irene; Schmitz, Dietmar; Suarez, Lucas; Swapp,
   Jackie; Weber, Julie; Wilkes, Josh; Williford, Ali; Wyrick, David (2026) Allen Institute
-  OpenScope - Psycode (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001417/draft
+  OpenScope - Psycode (Version 0.260626.2154) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001417/0.260626.2154
 contributor:
 - awardNumber: 1 U24 NS 113646-05
   name: National Institutes of Health (NIH)
@@ -347,6 +347,7 @@ contributor:
   schemaKey: Person
   url: https://alleninstitute.org/person/david-wyrick
 dateCreated: '2025-04-15T18:53:08.895305+00:00'
+datePublished: '2026-06-26T21:54:04.988117+00:00'
 description: 'Psycode dataset is an OpenScope project designed to investigate the
   effects of psilocybin on visual processing and behavior in the mouse visual cortex.
   The core experimental design follows a ‘pre-drug / post-drug’ structure, allowing
@@ -374,13 +375,14 @@ description: 'Psycode dataset is an OpenScope project designed to investigate th
   compound. **Note: In this dandiset, session ecephys-752309-2025-02-12-13-53-52 had
   synchronization/alignment issues between stimulus and ecephys timing. Session ecephys_767926_2025-02-26_15-49-35
   is missing running data because of a problem ith the sensor during recording**'
+doi: 10.48324/dandi.001417/0.260626.2154
 ethicsApproval:
 - contactPoint:
     schemaKey: ContactPoint
   identifier: ​Allen Institute Institutional Animal Care and Use Committee (IACUC),
     protocol 2117
   schemaKey: EthicsApproval
-id: DANDI:001417/draft
+id: DANDI:001417/0.260626.2154
 identifier: DANDI:001417
 keywords:
 - psilocybin
@@ -392,8 +394,20 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/001417/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/001417/0.260626.2154/assets.yaml
 name: Allen Institute OpenScope - Psycode
+publishedBy:
+  endDate: '2026-06-26T21:54:04.988117+00:00'
+  id: urn:uuid:7718271f-857f-4f10-9ed7-c2d43de9ca2e
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-06-26T21:54:04.988117+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:603f3f55-68cd-4d17-9847-4a5e9e122319
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - name: OpenScope’s Psycode Dataset
   relation: dcite:IsDescribedBy
@@ -408,6 +422,6 @@ studyTarget:
 - Psilocybin
 - Mouse
 - Vision
-url: https://dandiarchive.org/dandiset/001417/draft
-version: draft
+url: https://dandiarchive.org/dandiset/001417/0.260626.2154
+version: 0.260626.2154
 wasGeneratedBy: []
