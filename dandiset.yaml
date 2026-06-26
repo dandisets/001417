@@ -3,31 +3,411 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.9/context.json
+about:
+- name: Psilocybin
+  schemaKey: GenericType
 access:
-- embargoedUntil: '2028-03-10'
+- embargoedUntil: '2026-06-26'
   schemaKey: AccessRequirements
-  status: dandi:EmbargoedAccess
+  status: dandi:OpenAccess
+acknowledgement: We thank the Allen Institute founder, Paul G. Allen, for his vision,
+  encouragement, and support.
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 354660247064
+  numberOfFiles: 20
+  numberOfSubjects: 10
   schemaKey: AssetsSummary
-citation: Allen Institute OpenScope - Psycode (2026). (Version draft) [Data set].
-  DANDI Archive. https://dandiarchive.org/dandiset/001417/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
+  - Units
+  - LFP
+  - ElectricalSeries
+  - ElectrodeGroup
+citation: Amaya, Avalon; Bawany, Ahad; Buice, Michael; Carlson, Mikayla; De Filippo,
+  Roberto; Durand, Severine; Gillis, Ryan; Grasso, Conor; Groblewski, Peter; Han,
+  Warren; Johnson, Tye; Kenney, Jaimie; Kiselycznyk, Carly; Koch, Christof; Lecoq,
+  Jérôme A.; Loeffler, Henry; Marks, Lydia; Naidoo, Robyn; Ott, Torben; Ouellette,
+  Ben; Peene, Ross Carter; Rembado, Irene; Schmitz, Dietmar; Suarez, Lucas; Swapp,
+  Jackie; Weber, Julie; Wilkes, Josh; Williford, Ali; Wyrick, David (2026) Allen Institute
+  OpenScope - Psycode (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001417/draft
 contributor:
 - awardNumber: 1 U24 NS 113646-05
   name: National Institutes of Health (NIH)
   roleName:
   - dcite:Funder
   schemaKey: Organization
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: avalon.amaya@wsu.edu
+  identifier: 0000-0003-2274-2892
+  includeInCitation: true
+  name: Amaya, Avalon
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+  url: https://alleninstitute.org/person/avalon-amaya
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: ahad.bawany@alleninstitute.org
+  identifier: 0009-0002-5495-5411
+  includeInCitation: true
+  name: Bawany, Ahad
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+  url: https://www.allenneuraldynamics.org/people/ahad-bawany
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0000-0002-2196-1498
+  includeInCitation: true
+  name: Buice, Michael
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: mikayla.carlson@alleninstitute.org
+  identifier: 0009-0003-7019-2781
+  includeInCitation: true
+  name: Carlson, Mikayla
+  roleName:
+  - dcite:DataCollector
+  schemaKey: Person
+  url: https://alleninstitute.org/person/mikayla-carlson
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  - name: Humboldt University of Berlin
+    schemaKey: Affiliation
+  awardNumber: NIH U24 NS113646-01A1
+  email: roberto.defilippo@alleninstitute.org
+  identifier: 0000-0002-4085-9114
+  includeInCitation: true
+  name: De Filippo, Roberto
+  roleName:
+  - dcite:ContactPerson
+  - dcite:Conceptualization
+  schemaKey: Person
+  url: https://robertodf.github.io/
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: severined@alleninstitute.org
+  identifier: 0000-0001-7788-0200
+  includeInCitation: true
+  name: Durand, Severine
+  roleName:
+  - dcite:Investigation
+  schemaKey: Person
+  url: https://alleninstitute.org/person/severine-durand
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: ryan.gillis@alleninstitute.org
+  identifier: 0009-0000-1879-6519
+  includeInCitation: true
+  name: Gillis, Ryan
+  roleName:
+  - dcite:DataCollector
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0003-6384-4075
+  includeInCitation: true
+  name: Grasso, Conor
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0000-0002-8415-1118
+  includeInCitation: true
+  name: Groblewski, Peter
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Han, Warren
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: tye.johnson@alleninstitute.org
+  identifier: 0009-0006-7239-7571
+  includeInCitation: true
+  name: Johnson, Tye
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: jaimie.kenney@alleninstitute.org
+  identifier: 0009-0003-5308-2783
+  includeInCitation: true
+  name: Kenney, Jaimie
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0006-8410-1192
+  includeInCitation: true
+  name: Kiselycznyk, Carly
+  roleName:
+  - dcite:ProjectAdministration
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: ChristofK@alleninstitute.org
+  identifier: 0000-0001-6482-8067
+  includeInCitation: true
+  name: Koch, Christof
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: jeromel@alleninstitute.org
+  identifier: 0000-0002-0131-0938
+  includeInCitation: true
+  name: Lecoq, Jérôme A.
+  roleName:
+  - dcite:ProjectLeader
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: henry.loeffler@alleninstitute.org
+  includeInCitation: true
+  name: Loeffler, Henry
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: lydia.marks@alleninstitute.org
+  identifier: 0000-0002-7270-2680
+  includeInCitation: true
+  name: Marks, Lydia
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: robyn.naidoo@alleninstitute.org
+  identifier: 0009-0004-0996-8808
+  includeInCitation: true
+  name: Naidoo, Robyn
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Humboldt University of Berlin
+    schemaKey: Affiliation
+  email: torben.ott@bccn-berlin.de
+  identifier: 0000-0002-4168-2832
+  includeInCitation: true
+  name: Ott, Torben
+  roleName:
+  - dcite:Supervision
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: beno@alleninstitute.org
+  includeInCitation: true
+  name: Ouellette, Ben
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: carter.peene@alleninstitute.org
+  identifier: 0009-0000-6660-2264
+  includeInCitation: true
+  name: Peene, Ross Carter
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+  url: https://alleninstitute.org/person/carter-peene
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: irene.rembado@alleninstitute.org
+  identifier: 0000-0001-7121-4442
+  includeInCitation: true
+  name: Rembado, Irene
+  roleName:
+  - dcite:Supervision
+  schemaKey: Person
+- affiliation: []
+  email: dietmar.schmitz@charite.de
+  identifier: 0000-0003-2741-5241
+  includeInCitation: true
+  name: Schmitz, Dietmar
+  roleName:
+  - dcite:Conceptualization
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Suarez, Lucas
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: jackies@alleninstitute.org
+  identifier: 0009-0008-4965-6242
+  includeInCitation: true
+  name: Swapp, Jackie
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: julie.weber@alleninstitute.org
+  identifier: 0009-0002-1060-3828
+  includeInCitation: true
+  name: Weber, Julie
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: josh.wilkes@alleninstitute.org
+  includeInCitation: true
+  name: Wilkes, Josh
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: aliw@alleninstitute.org
+  includeInCitation: true
+  name: Williford, Ali
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: david.wyrick@alleninstitute.org
+  identifier: 0000-0001-8096-5766
+  includeInCitation: true
+  name: Wyrick, David
+  roleName:
+  - dcite:FormalAnalysis
+  schemaKey: Person
+  url: https://alleninstitute.org/person/david-wyrick
 dateCreated: '2025-04-15T18:53:08.895305+00:00'
-description: Dandiset for OpenScope's "Psycode" project
+description: 'Psycode dataset is an OpenScope project designed to investigate the
+  effects of psilocybin on visual processing and behavior in the mouse visual cortex.
+  The core experimental design follows a ‘pre-drug / post-drug’ structure, allowing
+  for a within-subject comparison of neural activity and task performance. Initially,
+  mice are trained on a visual change detection task, similar to the paradigm used
+  in the Visual Behavior Optical Physiology and Visual Behavior Neuropixels projects.
+  In this go/no-go task, mice are shown a continuous series of briefly presented natural
+  images (presented for 250 ms), and they earn water rewards by correctly reporting
+  when the identity of the image changes. Alongside this behavior, the experiment
+  includes a battery of passive visual stimulation protocols to probe the functional
+  properties of visual neurons.  The experimental timeline follows a structured sequence.
+  Before psilocybin application, mice first undergo passive visual stimulation for
+  receptive field (RF) mapping and a surround suppression paradigm, providing a baseline
+  measurement of each neuron’s tuning properties. This is followed by the change detection
+  task to end the pre-injection epoch. After psilocybin is administered, the same
+  sequence of stimuli is presented in reverse: first the change detection task, followed
+  by receptive field mapping and surround suppression. Finally, passive visual stimulation
+  is repeated, now including an optotagging protocol at the end to identify cortical
+  SST neurons. This symmetrical design—with both behavioral and passive protocols
+  repeated before and after drug administration—enables a powerful within-subject
+  analysis of how psilocybin modulates visual processing, from basic receptive field
+  properties to complex task-dependent dynamics involving natural image perception.
+  The dataset therefore offers a unique opportunity to link molecularly-specific cell
+  types, natural image perception, and the state-dependent changes induced by a psychedelic
+  compound. **Note: In this dandiset, session ecephys-752309-2025-02-12-13-53-52 had
+  synchronization/alignment issues between stimulus and ecephys timing. Session ecephys_767926_2025-02-26_15-49-35
+  is missing running data because of a problem ith the sensor during recording**'
+ethicsApproval:
+- contactPoint:
+    schemaKey: ContactPoint
+  identifier: ​Allen Institute Institutional Animal Care and Use Committee (IACUC),
+    protocol 2117
+  schemaKey: EthicsApproval
 id: DANDI:001417/draft
 identifier: DANDI:001417
+keywords:
+- psilocybin
+- openscope
+- mouse
+- vision
+- ecephys
+- neuropixels
+license:
+- spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001417/versions/draft/assets/
 name: Allen Institute OpenScope - Psycode
+relatedResource:
+- name: OpenScope’s Psycode Dataset
+  relation: dcite:IsDescribedBy
+  repository: OpenScope Databook
+  resourceType: dcite:ComputationalNotebook
+  schemaKey: Resource
+  url: https://alleninstitute.github.io/openscope_databook/psycode/
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.9
+studyTarget:
+- Psilocybin
+- Mouse
+- Vision
 url: https://dandiarchive.org/dandiset/001417/draft
 version: draft
+wasGeneratedBy: []
