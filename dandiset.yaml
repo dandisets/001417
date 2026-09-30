@@ -23,16 +23,16 @@ assetsSummary:
   measurementTechnique:
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  - name: surgical technique
-    schemaKey: MeasurementTechniqueType
-  numberOfBytes: 336622510918
-  numberOfFiles: 19
+  numberOfBytes: 354671355505
+  numberOfFiles: 20
   numberOfSubjects: 10
   schemaKey: AssetsSummary
   species:
@@ -40,11 +40,11 @@ assetsSummary:
     name: Mus musculus - House mouse
     schemaKey: SpeciesType
   variableMeasured:
-  - ElectricalSeries
-  - ElectrodeGroup
-  - ProcessingModule
   - Units
   - LFP
+  - ElectricalSeries
+  - ProcessingModule
+  - ElectrodeGroup
 citation: Amaya, Avalon; Bawany, Ahad; Buice, Michael; Carlson, Mikayla; De Filippo,
   Roberto; Durand, Severine; Gillis, Ryan; Grasso, Conor; Groblewski, Peter; Han,
   Warren; Johnson, Tye; Kenney, Jaimie; Kiselycznyk, Carly; Koch, Christof; Lecoq,
